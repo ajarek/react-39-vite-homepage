@@ -1,18 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { NavLink } from 'react-router-dom'
+import Hamburger from 'hamburger-react'
 import './Navigation.css'
 const Navigation = () => {
-  
+  const [isOpen, setOpen] = useState(false)
   return (
     <nav className={'nav'}>
+     
       <NavLink
-        className={'link'}
+        className={'link-logo'}
         to='/'
       >
         <img src="/logo.svg" alt="" />
       </NavLink>
      
-      <div className={'wrapper'}>
+      <ul className={!isOpen?'navbar-nav':'navbar-nav navbar-none'}>
+     
       <NavLink
         className={'link'}
         to='/'
@@ -44,8 +47,26 @@ const Navigation = () => {
         >
           Categories
         </NavLink>
+      </ul>
+      <div className="hamburger">
+      <Hamburger
+      size={30}
+      duration={0.3}
+      distance="md"
+      color={isOpen?"#f15e50":'#00001a'}
+      easing="ease-in"
+      rounded 
+      label="Show menu"
+      onToggle={toggled => {
+        setOpen(true)
+        if (toggled) {
+           // open a menu
+        } else {
+          setOpen(false)
+        }
+      }}
+      />
       </div>
-      
     </nav>
   )
 }
