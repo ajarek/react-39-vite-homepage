@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root {
+  /* Primary */
+  --orange: #e9ab53;
+  --red: #f15e50;
+  /* Neutral */
+  --white: #fffdfa;
+  --blue: #c5c6ce;
+  --grayish-blue: #5d5f79;
+  --very-dark-blue: #00001a;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  color: var(--very-dark-blue);
+}
+.App{
+  max-width: 1280px;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
