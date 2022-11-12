@@ -1,9 +1,9 @@
 import Navigation from './components/Navigation/Navigation'
-import Home from './components/Home/Home'
-import New from './components/New/New'
-import Popular from './components/Popular/Popular'
-import Trending from './components/Trending/Trending'
-import Categories from './components/Categories/Categories'
+import Home from './pages/Home/Home'
+import New from './pages/New/New'
+import Popular from './pages/Popular/Popular'
+import Opinions from './pages/Opinions/Opinions'
+import Contact from './pages/Contact/Contact'
 import { Routes, Route } from 'react-router-dom'
 function App() {
   return (
@@ -23,12 +23,12 @@ function App() {
           element={<Popular />}
         />
         <Route
-          path='/trending'
-          element={<Trending />}
+          path='/opinions'
+          element={<Opinions />}
         />
        <Route
-          path='/categories'
-          element={<Categories />}
+          path='/contact'
+          element={<Contact />}
         />
         
       </Routes>

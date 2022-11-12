@@ -1,0 +1,109 @@
+.home {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.wrapper-home {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  place-items: center;
+  gap: 1rem;
+}
+.wrapper-home section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.wrapper-home section .image {
+  width: 100%;
+  height: 28vh;
+
+  background-color: aqua;
+}
+.wrapper-home section .image img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.wrapper-home section article {
+  width: 100%;
+  height: 30vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.wrapper-home section article .text {
+  background-color: #fffdfa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text h1 {
+  font-size: 2rem;
+}
+.wrapper-home section article .desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fffdfa;
+  padding: 0 1rem;
+}
+.wrapper-home section article .desc button {
+  padding: 0.5rem 0.8rem;
+  background-color: #f15e50;
+  color: #fffdfa;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+}
+.wrapper-home section article .desc button:hover {
+  background-color: #ad3a2f;
+}
+
+.wrapper-home aside {
+  width: 100%;
+  height: 60vh;
+  background-color: #00001a;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  color: #fffdfa;
+  padding: 2rem;
+}
+.wrapper-home aside hr {
+  width: 100%;
+}
+.wrapper-home aside h1 {
+  color: #e9ab53;
+}
+.home footer {
+  width: 100%;
+  height: 28vh;
+  background-color: #fffdfa;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+  gap: 1rem;
+}
+.home footer .card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.home footer .card .img {
+  height: 100%;
+  width: 100%;
+}
+.home footer .card .img img {
+  width: 100%;
+  object-fit: cover;
+}
+.home footer .card .content{
+  padding: 1rem;
+}

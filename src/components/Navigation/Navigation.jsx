@@ -20,32 +20,32 @@ const Navigation = () => {
         className={'link'}
         to='/'
       >
-        Home
+        Główna
       </NavLink>
       
         <NavLink
           className={'link'}
           to='/new'
         >
-          New
+          Najnowsze
         </NavLink>
         <NavLink
           className={'link'}
           to='/popular'
         >
-          Popular
+          Popularne
         </NavLink>
         <NavLink
           className={'link'}
-          to='/trending'
+          to='/opinions'
         >
-          Trending
+          Opinie
         </NavLink>
         <NavLink
           className={'link'}
-          to='/categories'
+          to='/contact'
         >
-          Categories
+          Kontakt
         </NavLink>
       </ul>
       <div className="hamburger">
