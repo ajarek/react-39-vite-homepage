@@ -22,7 +22,7 @@
   width: 100%;
   height: 28vh;
 
-  background-color: aqua;
+  background-color: transparent;
 }
 .wrapper-home section .image img {
   width: 100%;
@@ -53,13 +53,16 @@
   background-color: #fffdfa;
   padding: 0 1rem;
 }
-.wrapper-home section article .desc button {
+.wrapper-home section article .desc .button {
   padding: 0.5rem 0.8rem;
   background-color: #f15e50;
   color: #fffdfa;
   letter-spacing: 1px;
   border: none;
   cursor: pointer;
+}
+.wrapper-home section article .desc .button:hover {
+  background-color: #f23524;
 }
 .wrapper-home section article .desc button:hover {
   background-color: #ad3a2f;
@@ -89,7 +92,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
-  gap: 1rem;
+  gap: 1rem ;
 }
 .home footer .card {
   width: 100%;
@@ -106,4 +109,22 @@
 }
 .home footer .card .content{
   padding: 1rem;
+}
+@media (max-width: 768px) {
+  .wrapper-home section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  1fr;
+  }
+  .wrapper-home {
+    grid-template-columns:  1fr;
+  }
+  .home footer {
+    grid-template-columns:1fr;
+  }
+  .wrapper-home section article {
+    grid-template-columns: 1fr ;
+    height: auto;
+  }
 }

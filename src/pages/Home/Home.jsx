@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './Home.css'
 
 const Home = () => {
@@ -23,7 +24,13 @@ const Home = () => {
               <p>
               Podczas wystąpienia Prezydent dziękował wszystkim, którzy przypominali o wielkiej wartości, jaką jest suwerenne państwo; edukowali młodzież i przypominali o bohaterach, o przodkach. 
               </p>
-              <button>READ MORE</button>
+              <NavLink
+          className={'button'}
+          to='/new'
+        >
+          Czytaj dalej
+        </NavLink>
+       
             </div>
           </article>
         </section>

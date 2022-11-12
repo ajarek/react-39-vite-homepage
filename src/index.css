@@ -34,3 +34,32 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
+.root {
+  height: 90vh;
+  width: 100%;
+}
+.bgimg {
+  background-image: url('https://wallpaperaccess.com/full/335666.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: #f15e50;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+}
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.middle p {
+  font-weight: 700;
+  font-size: 2rem;
+}
+hr {
+  margin: auto;
+  width: 40%;
+}
